@@ -42,8 +42,8 @@ app.get('/api/meals', (req, res) => {
 
 
 app.listen(8080, () => {
-  console.log(`The server is listening on port 8080`);
-});
+  console.log("The server is listening on port 8080")
+})
 
 
 app.post('/api/meals', (req, res) => {
