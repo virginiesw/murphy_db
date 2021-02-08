@@ -2,14 +2,12 @@
 const mysql = require('mysql')
 
 // 2
-const dbDetails = {
-  connectionLimit : 10,
-  host     : process.env.MYSQL_HOST || 'localhost',
-  user     : process.env.MYSQL_USERNAME || 'murphy_db_user',
-  password : process.env.MYSQL_PASSWORD || 'MyNewPass4!',
-  database : process.env.MYSQL_DATABASE || 'murphy_db'
-}
-const connection = mysql.createConnection(dbDetails)
+const connection = mysql.createConnection({
+  HOST: "us-cdbr-east-03.cleardb.com",
+  USER: "be542df607f72a",
+  PASSWORD: "85171675",
+  DB: "heroku_24c0201cef08267"
+})
 
 // 3
 function allMeals(callback) {
